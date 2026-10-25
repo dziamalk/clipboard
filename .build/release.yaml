@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "ClipboardApp-arm64-apple-macosx15.0-release.exe": ["<ClipboardApp-arm64-apple-macosx15.0-release.exe>"]
+  "ClipboardApp-arm64-apple-macosx15.0-release.module": ["<ClipboardApp-arm64-apple-macosx15.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<ClipboardApp-arm64-apple-macosx15.0-release.exe>","<ClipboardApp-arm64-apple-macosx15.0-release.module>"]
+  "test": ["<ClipboardApp-arm64-apple-macosx15.0-release.exe>","<ClipboardApp-arm64-apple-macosx15.0-release.module>"]
+default: "main"
+nodes:
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/AppDelegate.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/ClipboardMonitor.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HistoryStore.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HotKey.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Models.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Paster.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupController.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupView.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Settings.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/SettingsView.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/main.swift"]
+    outputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/sources"]
+    description: "Write auxiliary file /Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/sources"
+
+  "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swift.o"]
+    outputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.product/Objects.LinkFileList"
+
+  "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<ClipboardApp-arm64-apple-macosx15.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp"]
+    outputs: ["<ClipboardApp-arm64-apple-macosx15.0-release.exe>"]
+
+  "<ClipboardApp-arm64-apple-macosx15.0-release.module>":
+    tool: phony
+    inputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/Modules/ClipboardApp.swiftmodule"]
+    outputs: ["<ClipboardApp-arm64-apple-macosx15.0-release.module>"]
+
+  "C.ClipboardApp-arm64-apple-macosx15.0-release.exe":
+    tool: shell
+    inputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.product/Objects.LinkFileList"]
+    outputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp"]
+    description: "Linking ./.build/arm64-apple-macosx/release/ClipboardApp"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release","-o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp","-module-name","ClipboardApp","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_ClipboardApp_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.product/Objects.LinkFileList","-target","arm64-apple-macosx14.0","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/Library/Developer/Frameworks"]
+
+  "C.ClipboardApp-arm64-apple-macosx15.0-release.module":
+    tool: shell
+    inputs: ["/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/AppDelegate.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/ClipboardMonitor.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HistoryStore.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HotKey.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Models.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Paster.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupController.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupView.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Settings.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/SettingsView.swift","/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/main.swift","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/sources"]
+    outputs: ["/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swift.o","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/Modules/ClipboardApp.swiftmodule"]
+    description: "Compiling Swift Module 'ClipboardApp' (11 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","ClipboardApp","-emit-dependencies","-emit-module","-emit-module-path","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/Modules/ClipboardApp.swiftmodule","-output-file-map","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/output-file-map.json","-whole-module-optimization","-num-threads","8","-c","@/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/sources","-I","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx14.0","-O","-j8","-DSWIFT_PACKAGE","-module-cache-path","/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","ClipboardApp_main","-color-diagnostics","-swift-version","5","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","clipboard"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/","/Users/maciejdziamalek/Workspace/clipboard/Package.swift","/Users/maciejdziamalek/Workspace/clipboard/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

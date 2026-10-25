@@ -1,0 +1,62 @@
+{
+  "": {
+    "dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardApp.d",
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardApp.o",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/master.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/AppDelegate.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/AppDelegate.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/ClipboardMonitor.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/ClipboardMonitor.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HistoryStore.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HistoryStore.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HotKey.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/HotKey.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Models.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Models.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Paster.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Paster.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupController.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupController.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupView.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/PopupView.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Settings.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/Settings.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/SettingsView.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/SettingsView.swiftdeps"
+  },
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/main.swift": {
+    "object": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swift.o",
+    "swiftmodule": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/maciejdziamalek/Workspace/clipboard/.build/arm64-apple-macosx/release/ClipboardApp.build/main.swiftdeps"
+  }
+}

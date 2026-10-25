@@ -1,0 +1,16 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "229643cfd937e74e8e62b651bc060e39429d39057ec7ad4551042511c02cdf8a"
+build_start_time: [1792948203, 682631000]
+build_end_time: [1792948204, 902732000]
+inputs:
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/AppDelegate.swift": [1792944533, 489970728]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/ClipboardMonitor.swift": [1792944502, 963452832]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HistoryStore.swift": [1792944502, 961778169]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/HotKey.swift": [1792944502, 965110911]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Models.swift": [1792944502, 959963590]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Paster.swift": [1792944502, 966789865]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupController.swift": [1792944533, 485432406]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/PopupView.swift": [1792944533, 483017661]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/Settings.swift": [1792948176, 236792036]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/SettingsView.swift": [1792944533, 487747692]
+  "/Users/maciejdziamalek/Workspace/clipboard/Sources/ClipboardApp/main.swift": [1792944502, 956405807]
